@@ -2,5 +2,11 @@ language: java
 jdk:
   - openjdk8
 
+install:
+  - mvn deps
+
+script:
+  - mvn test
+
 notifications:
   email: false
